@@ -8,20 +8,65 @@
 
 /* Begin PBXBuildFile section */
 		22B2C9EE1CE23C6000D10DA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2C9ED1CE23C6000D10DA5 /* AppDelegate.swift */; };
-		22B2C9F01CE23C6000D10DA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2C9EF1CE23C6000D10DA5 /* ViewController.swift */; };
 		22B2C9F31CE23C6000D10DA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B2C9F11CE23C6000D10DA5 /* Main.storyboard */; };
 		22B2C9F51CE23C6000D10DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B2C9F41CE23C6000D10DA5 /* Assets.xcassets */; };
 		22B2C9F81CE23C6000D10DA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22B2C9F61CE23C6000D10DA5 /* LaunchScreen.storyboard */; };
+		22B2CA0E1CE23E7100D10DA5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2CA061CE23DD400D10DA5 /* ResearchKit.framework */; };
+		22B2CA0F1CE23E7100D10DA5 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22B2CA061CE23DD400D10DA5 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22B2CA141CE2414200D10DA5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2CA131CE2414200D10DA5 /* MainViewController.swift */; };
+		22B2CA161CE2467600D10DA5 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2CA151CE2467600D10DA5 /* ConsentDocument.swift */; };
+		22B2CA181CE2484400D10DA5 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B2CA171CE2484400D10DA5 /* ConsentTask.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22B2CA051CE23DD400D10DA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B2C9FF1CE23DD400D10DA5 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		22B2CA071CE23DD400D10DA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B2C9FF1CE23DD400D10DA5 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		22B2CA101CE23E7100D10DA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22B2C9FF1CE23DD400D10DA5 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22B2CA121CE23E7200D10DA5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22B2CA0F1CE23E7100D10DA5 /* ResearchKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		22B2C9EA1CE23C6000D10DA5 /* RKTourettes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKTourettes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22B2C9ED1CE23C6000D10DA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22B2C9EF1CE23C6000D10DA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22B2C9F21CE23C6000D10DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22B2C9F41CE23C6000D10DA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22B2C9F71CE23C6000D10DA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22B2C9F91CE23C6000D10DA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22B2C9FF1CE23DD400D10DA5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = "../../ResearchKit-master/ResearchKit.xcodeproj"; sourceTree = "<group>"; };
+		22B2CA131CE2414200D10DA5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
+		22B2CA151CE2467600D10DA5 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
+		22B2CA171CE2484400D10DA5 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22B2CA0E1CE23E7100D10DA5 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +84,7 @@
 		22B2C9E11CE23C6000D10DA5 = {
 			isa = PBXGroup;
 			children = (
+				22B2C9FF1CE23DD400D10DA5 /* ResearchKit.xcodeproj */,
 				22B2C9EC1CE23C6000D10DA5 /* RKTourettes */,
 				22B2C9EB1CE23C6000D10DA5 /* Products */,
 			);
@@ -54,14 +101,25 @@
 		22B2C9EC1CE23C6000D10DA5 /* RKTourettes */ = {
 			isa = PBXGroup;
 			children = (
+				22B2CA131CE2414200D10DA5 /* MainViewController.swift */,
 				22B2C9ED1CE23C6000D10DA5 /* AppDelegate.swift */,
-				22B2C9EF1CE23C6000D10DA5 /* ViewController.swift */,
 				22B2C9F11CE23C6000D10DA5 /* Main.storyboard */,
 				22B2C9F41CE23C6000D10DA5 /* Assets.xcassets */,
 				22B2C9F61CE23C6000D10DA5 /* LaunchScreen.storyboard */,
 				22B2C9F91CE23C6000D10DA5 /* Info.plist */,
+				22B2CA151CE2467600D10DA5 /* ConsentDocument.swift */,
+				22B2CA171CE2484400D10DA5 /* ConsentTask.swift */,
 			);
 			path = RKTourettes;
+			sourceTree = "<group>";
+		};
+		22B2CA001CE23DD400D10DA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22B2CA061CE23DD400D10DA5 /* ResearchKit.framework */,
+				22B2CA081CE23DD400D10DA5 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +132,12 @@
 				22B2C9E61CE23C6000D10DA5 /* Sources */,
 				22B2C9E71CE23C6000D10DA5 /* Frameworks */,
 				22B2C9E81CE23C6000D10DA5 /* Resources */,
+				22B2CA121CE23E7200D10DA5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				22B2CA111CE23E7100D10DA5 /* PBXTargetDependency */,
 			);
 			name = RKTourettes;
 			productName = RKTourettes;
@@ -111,12 +171,35 @@
 			mainGroup = 22B2C9E11CE23C6000D10DA5;
 			productRefGroup = 22B2C9EB1CE23C6000D10DA5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 22B2CA001CE23DD400D10DA5 /* Products */;
+					ProjectRef = 22B2C9FF1CE23DD400D10DA5 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				22B2C9E91CE23C6000D10DA5 /* RKTourettes */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		22B2CA061CE23DD400D10DA5 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 22B2CA051CE23DD400D10DA5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		22B2CA081CE23DD400D10DA5 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 22B2CA071CE23DD400D10DA5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		22B2C9E81CE23C6000D10DA5 /* Resources */ = {
@@ -136,12 +219,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22B2C9F01CE23C6000D10DA5 /* ViewController.swift in Sources */,
+				22B2CA141CE2414200D10DA5 /* MainViewController.swift in Sources */,
+				22B2CA181CE2484400D10DA5 /* ConsentTask.swift in Sources */,
+				22B2CA161CE2467600D10DA5 /* ConsentDocument.swift in Sources */,
 				22B2C9EE1CE23C6000D10DA5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22B2CA111CE23E7100D10DA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 22B2CA101CE23E7100D10DA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22B2C9F11CE23C6000D10DA5 /* Main.storyboard */ = {
@@ -252,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RKTourettes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boomhowersoftware.RKTourettes;
@@ -263,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RKTourettes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.boomhowersoftware.RKTourettes;
